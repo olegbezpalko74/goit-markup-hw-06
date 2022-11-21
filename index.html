@@ -377,6 +377,7 @@
                 <use href="./images/close-black-18dp.svg#icon-close"></use>
               </svg>
             </button>
+            <h1 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h1>
             <form class="modal-form" name="modal-form">
                 <div class="modal-form-group" role="group">
                     <label class="modal-form-label" for="user_name">Ім'я</label>
@@ -400,13 +401,14 @@
                             <use href="./images/"></use>
                         </svg>
                     </div>
-                    <label class="modal-form-label" for="modal-form-messeg">Коментар</label>
-                    <textarea>
-                        
-                    </textarea>
-
+                    <label class="modal-form-label" for="modal-form-message">Коментар</label>
+                     <textarea class="modal-form-message" name="user_message" id="user_message" rows="6"></textarea>
                 </div>
-
+                <div role="group">
+                    <input class="modal-form-checkbox" type="checkbox" id="user_agreement">
+                    <label for="user_agreement">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                </div>
+                <button class="modal-form-button" type="submit">Відправити</button>
 
             </form>
         </div>
@@ -418,18 +420,7 @@
 
 
 
-<br>
-<label for="tel">Телефон</label>
-<input type="tel" name="tel" id="tel">
-<br>
-<label for="mail">Пошта</label>
-<input type="email" name="mail" id="mail">
-<br>               
-<label for="Feedback">Коментар</label>
-<textarea name="Feedback" id="Feedback" cols="30" rows="10"></textarea>
-<br>
-<input type="checkbox" name="" value="condition" id="condition"> 
-<label for="condition">Погоджуюся з розсилкою та приймаю Умови договору</label>
 
-<br>
-<button type="submit">Відправити</button>
+
+
+

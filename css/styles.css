@@ -660,6 +660,29 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
 
 }
+.modal-form-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+margin-top: 48px;
+margin-bottom: 4px;
+}
+.modal-form-field {
+    width: 448px;
+    height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px
+}
+.modal-form-group {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.modal-form-wrapper {
+    margin-bottom: 10px;
+}
 
 
 
