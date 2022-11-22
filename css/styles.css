@@ -586,8 +586,6 @@ height: 44px;
 }
 
 .newsletter {
-    width: 570px;
-    height: 86px;
     margin-left: 93px;
     
 }
@@ -603,6 +601,43 @@ margin-bottom: 20px;
 .footer-form {
     display: flex;
 }
+.footer-email input {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background: var(--hero-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+    padding: 15px 16px;
+}
+.footer-button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    border: transparent;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    height: 50px;
+    min-width: 200px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+.icon-send {
+    margin-left: 12px;
+}
+    
+
 /* Modal window */
 
 .backdrop {
@@ -710,14 +745,6 @@ padding: 12px;
 padding-left: 42px;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover,
-.form-input:focus {
-    border-color: var(--accent-color);
-}
-
-.form-input:hover + .modal-svg, .form-input:focus + .modal-svg {
-    fill: var(--accent-color);
-}
 .modal-svg {
     position: absolute;
     left: 15px;
@@ -725,6 +752,18 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--accent-color);
+}
+.form-input:hover + .modal-svg,
+.form-input:focus + .modal-svg {
+  fill: var(--accent-color);
+}
+
+
+
+
 .modal-form-textarea {
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -765,6 +804,7 @@ color: var(--primary-text-color);
 .modal-checkbox-input:checked + .checkbox-label svg {
 background-color: var(--accent-color);
 border: none;
+
 }
 .checkbox-label svg {
 width: 16px;

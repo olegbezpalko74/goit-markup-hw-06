@@ -360,11 +360,17 @@
     <div class="newsletter">
         <p class="footer-subject">Підпишіться на розсилку</p>
         <form class="footer-form">
+        <div class="footer-email">
         <label for="mail"></label>
             <input type="email" name="mail" placeholder="E-mail">
+        </div>
         
-        <button type="submit">
-            Підписатися</button>
+        <button type="submit" class="footer-button">
+            Підписатися
+            <svg class="icon-send" width="24" height="24">
+                <use href="/images/icon send.svg#icon-send"></use>
+            </svg>
+        </button>
         </form>
     </div>
     
@@ -422,7 +428,7 @@
                     <input class="modal-checkbox-input" type="checkbox" name="checkbox-label" id="checkbox-label">
                     <label for="checkbox-label" class="checkbox-label">
                         <svg class="checkbox-icon" width="16"  height="15">
-                            <use href="./images/"></use>
+                            <use href="./images/Vector (1).svg#vector"></use>
                         </svg>
                         Погоджуюся з розсилкою та приймаю 
                         <span class="experpt">Умови договору</span>
